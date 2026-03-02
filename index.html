@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Anahra Terápias</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="/dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/dist/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/main.css">
+</head>
+
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container">
+
+        <!-- Logo + Nombre -->
+        <a class="navbar-brand brand-wrapper" href=".">
+          <img src="/assets/img/logo-alt.png" alt="Logo" class="brand-logo">
+          <span class="brand-text">
+            Anahra Terapias
+          </span>
+        </a>
+
+        <!-- Botón mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title brand-text">
+              Menú
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+            </button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-3">
+
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#">Servicios</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="about.html">Sobre mi</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#">Contacto</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- main: hero section start -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center hero-row">
+
+          <div class="col-lg-7">
+
+            <h1 class="hero-title">
+              Volver a mi
+            </h1>
+
+            <h2 class="hero-subtitle">
+              cuerpo, emoción, mente y energía en un mismo camino.
+            </h2>
+
+            <p class="hero-text">
+              Acompaño procesos con herramientas integradoras para que puedas escucharte, recalibrarte y recordar quién
+              sos.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="https://calendar.app.google/NTyVHfQM2wgzenp68" target="_blank" class="btn-primary-custom">
+                Reservar Sesión
+              </a>
+
+              <a href="#" class="btn-outline-custom">
+                Ver Cursos
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end section -->
+
+    <!-- main: section #1 -->
+
+    <section class="section-one">
+      <div class="container">
+
+        <h1 class="section-one-title text-center">
+          ¿Como acompaño?
+        </h1>
+
+        <div class="row g-4 mt-4">
+
+          <!-- Card 1 -->
+          <div class="col-lg-4">
+            <div class="section-one-card">
+
+              <h3 class="card-title underline">
+                Presencia Amorosa
+              </h3>
+
+              <p class="card-text">
+                No “arreglar”, sino “recordar”
+              </p>
+
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-lg-4">
+            <div class="section-one-card">
+
+              <h3 class="card-title underline">
+                Integración
+              </h3>
+
+              <p class="card-text">
+                Cuerpo + emoción + mente + energía
+              </p>
+
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-lg-4">
+            <div class="section-one-card">
+
+              <h3 class="card-title underline">
+                Herramientas
+              </h3>
+
+              <p class="card-text">
+                Focusing / Reiki / Akáshicos / Astrología /
+                Flores / Acompañamiento / Anahra
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end section -->
+
+    <!-- main: services section -->
+    <section class="services-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">
+            SERVICIOS
+          </span>
+          <h2 class="section-title">
+            Un espacio para volver a vos
+          </h2>
+          <p class="section-subtitle">
+            Cada sesión es un encuentro cuidado, respetuoso y profundo,
+            pensado para acompañar tu proceso.
+          </p>
+        </div>
+        <!-- GRID (js) -->
+        <div id="services-container" class="row g-4 mt-5 justify-content-center"></div>
+      </div>
+    </section>
+    <!-- end section -->
+  </main>
+</body>
+
+<!-- scripts & js -->
+<script src="/assets/index.js"></script>
+<script src="/dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+<script src="/dist/bootstrap-icons-1.13.1/bootstrap-icons.json"></script>
+
+</html>
