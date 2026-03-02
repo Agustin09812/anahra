@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url('/assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url('/assets/fonts/PlayfairDisplay-Bold.woff2') format('woff2');
+  src: url('./assets/fonts/PlayfairDisplay-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Public Sans';
-  src: url('/assets/fonts/PublicSans-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/PublicSans-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: 'Public Sans';
-  src: url('/assets/fonts/PublicSans-Bold.woff2') format('woff2');
+  src: url('./assets/fonts/PublicSans-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -283,7 +283,7 @@ button,
   min-height: 85vh;
   display: flex;
   align-items: center;
-  background-image: url('/assets/img/img (5).webp');
+  background-image: url('./assets/img/img (5).webp');
   background-size: cover;
   background-position: center;
   position: relative;
