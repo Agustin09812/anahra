@@ -9,9 +9,9 @@ async function init() {
 ================================ */
 
 async function loadServices() {
-
   try {
 
+    // ⚠️ corregido path
     const response = await fetch('./data/services.json');
 
     if (!response.ok)
@@ -23,7 +23,6 @@ async function loadServices() {
 
     if (!container) return;
 
-    // orden MUY importante
     const services = data.services.sort(
       (a, b) => (a.order ?? 999) - (b.order ?? 999)
     );
@@ -33,81 +32,58 @@ async function loadServices() {
       .join("");
 
   } catch (error) {
-
     console.error("Error cargando servicios:", error);
-
   }
 }
 
 /* ================================
-   CARD TEMPLATE
+   CARD TEMPLATE NUEVO
 ================================ */
 
 function createServiceCard(service) {
 
-  const durationHTML = service.duration
-    ? `<span class="service-duration">
-         Duración: ${service.duration} min
-       </span>`
-    : '';
-
-  const priceHTML = service.prices
-    ? `
-    <span class="service-price">
-      Precio nacional: AR$ ${service.prices.ars.toLocaleString('es-AR')}
-    </span>
-    <span class="service-price">
-      Precio internacional: U$D ${service.prices.usd}
-    </span>
-  `
-    : '';
-
-  const featuredClass = service.featured
-    ? 'featured-card'
-    : '';
-
   return `
-  <div class="col-md-6 col-xl-4">
+  <div class="col-12 col-md-10 col-lg-6">
 
-    <a href="${service.url}" class="service-card-link">
+    <div class="service-card-new shadow-sm h-100">
 
-      <div class="service-card shadow"
-           style="background-image:url('${service.image || "/assets/img/hero-bg.webp"}')">
+      <div class="service-img">
+        <img src="${service.image || "./assets/img/hero-bg.webp"}" alt="${service.title}">
+      </div>
 
-        <div class="service-content text-center">
+      <div class="service-info">
+
+        <h3>${service.title}</h3>
+
+        <p class="service-benefit">
+          ${service.description}
+        </p>
 
         <span class="service-duration">
-            Duración: ${service.duration} min
+          Duración: ${service.duration} min
+        </span>
+
+        <span class="service-type">
+          Tipo de sesión: ${service.type}
+        </span>
+
+        <div class="service-price-container">
+          <span class="service-price">
+            AR$: ${service.prices.ars.toLocaleString('es-AR')}
           </span>
-
-          <h3>${service.title}</h3>
-
-          <p class="service-benefit">
-            ${service.description}
-          </p>
-
-          <hr>
-
-          <div class="service-price-container">
-            <span class="service-price">
-              AR$: ${service.prices.ars.toLocaleString('es-AR')}
-            </span>
-            <span class="service-price">
-              U$D: ${service.prices.usd}
-            </span>
-          </div>
-
-          <span class="service-btn btn mt-3 w-100">
-            ${service.cta}
+          <span class="service-price">
+            U$D: ${service.prices.usd}
           </span>
-
         </div>
+
+        <a href="${service.url}" target="_blank" class="btn mt-3">
+          ${service.cta}
+        </a>
 
       </div>
 
-    </a>
+    </div>
 
   </div>
 `;
-
 }

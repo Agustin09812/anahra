@@ -235,15 +235,35 @@ button,
   font-size: 2rem;
 }
 
-.nav-text {
+.nav-text,
+.dropdown,
+.dropdown-toggle,
+.dropdown-menu,
+.dropdown-item {
   font-family: 'Public Sans', sans-serif;
   font-weight: 400;
-  color: var(--text);
-  font-size: 1.25rem;
+  color: var(--text) !important;
+  font-size: 1.10rem !important;
 }
 
-.nav-text:hover {
-  color: var(--cta-hover);
+.nav-text:hover,
+.dropdown:hover,
+.dropdown-toggle:hover,
+.dropdown-menu:hover,
+.dropdown-item:hover {
+  color: var(--cta-hover) !important;
+}
+
+/* refuerzo para dropdown */
+.dropdown-menu {
+  color: var(--text) !important;
+  border: none !important;
+  background-color: var(--bg-main) !important;
+}
+
+/* refuerzo para los items */
+.dropdown-item:focus {
+  background-color: var(--bg-main) !important;
 }
 
 .navbar-toggler {
@@ -411,7 +431,6 @@ button,
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 2.8rem);
   color: #7899B1;
-  font-size: 3rem;
 }
 
 .section-one-card {
@@ -527,99 +546,317 @@ button,
 
 /* ================== */
 
-/* ===== main: services section ===== */
+/* ===== main: experiencie section ===== */
+
+.experience-section {
+  background: #FFFAF6;
+  padding: 7rem 0;
+  border-top: 1px solid rgba(120, 153, 177, .08);
+}
+
+.experience-card {
+  background: #F6EDED;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 100%;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== CTA TERAPIAS ===== */
+
+.cta-terapias {
+  background: #F6EDED;
+  border-radius: 28px;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+.cta-terapias-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* TEXTO */
+.cta-text {
+  max-width: 600px;
+}
+
+.cta-title {
+  font-family: var(--font-title);
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+}
+
+.cta-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-list {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+/* BOTONES */
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 220px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+  .cta-terapias-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-actions {
+    width: 100%;
+    align-items: center;
+  }
+
+  .cta-actions a {
+    width: 100%;
+    max-width: 300px;
+  }
+
+}
+
+/* ===== CTA LIBROS ===== */
+
+.cta-libros {
+  margin-top: 4rem;
+}
+
+.cta-libros-title {
+  font-family: var(--font-title);
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+}
+
+.cta-libros-subtitle {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* CARD */
+.cta-libros-card {
+  margin-top: 3rem;
+  background: linear-gradient(135deg, var(--cta), #2f6e7c);
+  border-radius: 28px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.cta-libros-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* TEXTO */
+.cta-libros-text h3,
+.cta-libros-text p,
+.cta-libros-title,
+.cta-libros-subtitle,
+.cta-libros .section-eyebrow {
+  color: var(--bg-main);
+}
+
+.cta-libros-text h3 {
+  font-family: var(--font-title);
+}
+
+/* BOTÓN */
+.cta-libros-text .btn {
+  background: var(--secondary);
+  color: var(--blacktext);
+  border: none;
+  transition: all .3s ease;
+}
+
+.cta-libros-text .btn:hover {
+  transform: scale(1.05);
+}
+
+/* IMAGEN */
+.cta-libros-img {
+  width: 200px;
+}
+
+.cta-libros-img img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+  .cta-libros-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-libros-img {
+    width: 150px;
+  }
+
+}
+
+/* ================== */
+
+/* ===== terapias.html ===== */
 
 .services-section {
   background: #FFFAF6;
   padding: 7rem 0;
-  border-top: 1px solid rgba(120, 153, 177, .08);
-
 }
 
-.service-card {
-  position: relative;
+.service-card-new {
+  background: #F6EDED;
   border-radius: 24px;
   overflow: hidden;
-  height: 425px;
-  background-size: cover;
-  background-position: center;
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all .4s ease;
+  flex-direction: column;
+  transition: all .3s ease;
 }
 
-.service-btn {
-  display: inline-block;
-  margin-top: auto;
-  font-family: var(--font-body);
+.service-card-new:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-.service-content {
+.service-img {
   width: 100%;
-  margin: calc(10%);
+  height: 220px;
+  flex-shrink: 0;
 }
 
-.service-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top,
-      #000000a6 45%,
-      #0000004d 70%,
-      transparent);
-  transition: .4s ease;
+.service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.service-card>* {
-  position: relative;
-  z-index: 2;
+.service-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
-.service-duration {
-  display: block;
-  margin-top: .4rem;
-  font-size: 1.1rem;
-  color: var(--secondarytext);
-  font-family: var(--font-body);
+.service-info h3 {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+}
+
+.service-benefit {
+  font-size: 0.95rem;
+}
+
+.service-duration,
+.service-type {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: bold;
 }
 
 .service-price-container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 0.2rem;
 }
 
 .service-price {
-  margin-top: .4rem;
-  font-size: 1.1rem;
   font-weight: bold;
-  color: var(--secondarytext);
-  font-family: var(--font-body);
+  font-size: 1rem;
 }
 
-.service-card h3 {
-  font-family: var(--font-title);
-  font-size: 1.8rem;
-  color: var(--secondarytext);
+@media (min-width: 992px) {
+
+  .service-card-new {
+    flex-direction: row;
+    min-height: 280px;
+  }
+
+  .service-img {
+    width: 50%;
+    height: auto;
+  }
+
+  .service-info {
+    width: 50%;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .service-price-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }
 
-.service-benefit {
-  font-family: var(--font-body);
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: var(--secondarytext);
+/* ================== */
+
+/* ===== sobre-mi.html ===== */
+
+.about-section {
+  background: #FFFAF6;
+  padding: 7rem 0;
 }
 
-
-.service-card:hover::before {
-  background: rgba(255, 255, 255, 0.511);
+.about-card {
+  background: #F6EDED;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 100%;
+  transition: all .3s ease;
 }
 
-.service-card:hover h3,
-.service-card:hover .service-benefit,
-.service-card:hover .service-duration,
-.service-card:hover .service-price {
-  color: var(--blacktext);
+.about-card:hover {
+  transform: translateY(-6px);
+}
+
+.about-card h4 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.about-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* ================== */
+
+/* ===== main: therapy section ===== */
+
+.therapy-section {
+  background: #FFFAF6;
+  padding: 7rem 0;
+  border-top: 1px solid rgba(120, 153, 177, .08);
 }
 
 /* ================== */

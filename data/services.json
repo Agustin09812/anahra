@@ -5,60 +5,70 @@
       "title": "Reiki",
       "description": "Armonizá tu energía y recuperá tu equilibrio interno.",
       "duration": 60,
+      "type": "individual",
       "prices": {
         "ars": 25000,
         "usd": 30
       },
       "cta": "Reservar",
-      "url": "https://calendar.app.google/NTyVHfQM2wgzenp68"
+      "url": "https://calendar.app.google/NTyVHfQM2wgzenp68",
+      "image": "https://www.terapiasmanuales.com/wp-content/uploads/2025/09/reiki-chakra-corona-sesion-bilbao.webp"
     },
     {
       "order": 2,
       "title": "Registros Akáshicos",
       "description": "Accedé a información profunda para tu evolución.",
       "duration": 60,
+      "type": "individual",
       "prices": {
         "ars": 30000,
         "usd": 35
       },
       "cta": "Reservar",
-      "url": "https://calendar.app.google/NTyVHfQM2wgzenp68"
+      "url": "https://calendar.app.google/NTyVHfQM2wgzenp68",
+      "image": "https://sanageo.com/wp-content/uploads/2024/04/registrosakashicos.jpg.webp"
     },
     {
       "order": 3,
       "title": "Astrología",
       "description": "Comprendé tu mapa natal y tus procesos vitales.",
       "duration": 60,
+      "type": "individual",
       "prices": {
         "ars": 30000,
         "usd": 35
       },
       "cta": "Reservar",
-      "url": "https://calendar.app.google/NTyVHfQM2wgzenp68"
+      "url": "https://calendar.app.google/NTyVHfQM2wgzenp68",
+      "image": "https://muyinteresante.okdiario.com/wp-content/uploads/sites/5/2022/10/13/63481b6e32bb5.jpeg"
     },
     {
       "order": 4,
       "title": "Anahra",
       "description": "Descripción de las sesiones.",
       "duration": 60,
+      "type": "individual",
       "prices": {
         "ars": 30000,
         "usd": 35
       },
       "cta": "Reservar",
-      "url": "https://calendar.app.google/NTyVHfQM2wgzenp68"
+      "url": "https://calendar.app.google/NTyVHfQM2wgzenp68",
+      "image": "https://muyinteresante.okdiario.com/wp-content/uploads/sites/5/2022/10/13/63481b6e32bb5.jpeg"
     },
     {
       "order": 5,
       "title": "Barras Access",
       "description": "Descripción de las sesiones.",
       "duration": 60,
+      "type": "individual",
       "prices": {
         "ars": 30000,
         "usd": 35
       },
       "cta": "Reservar",
-      "url": "https://calendar.app.google/NTyVHfQM2wgzenp68"
+      "url": "https://calendar.app.google/NTyVHfQM2wgzenp68",
+      "image": "https://cdn.unotv.com/images/2024/08/barras-de-access-131653.jpeg"
     }
   ]
 }

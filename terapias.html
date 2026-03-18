@@ -42,22 +42,59 @@
           </div>
 
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 gap-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-2">
 
               <li class="nav-item">
                 <a class="nav-link nav-text" href="index.html">Inicio</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link nav-text" href="#">Servicios</a>
+                <a class="nav-link nav-text" href="index.html#experiencias">Experiencias</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-text" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Servicios
+                </a>
+
+                <ul class="dropdown-menu shadow">
+
+                  <li>
+                    <a class="dropdown-item" href="terapias.html">
+                      Terapias
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#talleres">
+                      Talleres
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#libros">
+                      Libros
+                    </a>
+                  </li>
+
+                </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link nav-text" href="about.html">Sobre mi</a>
+                <a class="nav-link nav-text" href="sobre-mi.html">Sobre mi</a>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link nav-text" href="#">Contacto</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#">Cursos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#">Libros</a>
               </li>
 
             </ul>
@@ -71,25 +108,22 @@
 
 
   <main>
-    <!-- main: section #1 -->
 
     <!-- main: services section -->
     <section class="services-section">
       <div class="container">
+
         <div class="section-header text-center">
-          <span class="section-eyebrow">
-            SOBRE MI
-          </span>
-          <h2 class="section-title">
-            Un espacio para volver a vos
-          </h2>
+          <span class="section-eyebrow">TERAPIAS</span>
+          <h2 class="section-title">Todas las terapias</h2>
           <p class="section-subtitle">
-            Cada sesión es un encuentro cuidado, respetuoso y profundo,
-            pensado para acompañar tu proceso.
+            Elegí la sesión que mejor acompañe tu proceso.
           </p>
         </div>
-        <!-- GRID (js) -->
+
+        <!-- GRID DINÁMICO -->
         <div id="services-container" class="row g-4 mt-5 justify-content-center"></div>
+
       </div>
     </section>
     <!-- end section -->
